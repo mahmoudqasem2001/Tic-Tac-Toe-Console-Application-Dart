@@ -31,20 +31,6 @@ dart tic_tac_toe.dart
 ## Gameplay Instructions
 - Players take turns entering their moves by choosing a number corresponding to an empty cell on the board.
 
-- The board is represented as follows:
-
-    |   |
-  1 | 2 | 3
-    |   |
-  --------
-    |   |
-  4 | 5 | 6
-    |   |
-  --------
-    |   |
-  7 | 8 | 9
-    |   |
-
 - Enter your move by typing the number of the cell where you want to place your marker ('X' or 'O').
 
 - The game ends when a player wins, or there is a draw.
