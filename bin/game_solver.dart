@@ -52,8 +52,19 @@ void checkWinner(String player) {
 void getPlayerInput() {
   print(
       'Player ${isXturn ? 1 : 2}, please enter the number of the square where you want to place your ${isXturn ? player1Marker : player2Marker}:');
-  int number = int.parse(stdin.readLineSync()!);
-  values[number - 1] = isXturn ? player1Marker : player2Marker;
+ int number;
+  while (true) {
+    try {
+      number = int.parse(stdin.readLineSync()!);
+      if (number < 1 || number > 9 || values[number - 1] == player1Marker || values[number - 1] == player2Marker) {
+        throw FormatException();
+      }
+      break;
+    } catch (e) {
+      print('Invalid input. Please enter a number between 1 and 9 corresponding to an empty cell.');
+    }
+  } 
+   values[number - 1] = isXturn ? player1Marker : player2Marker;
   isXturn = !isXturn;
   moveCount++;
 
