@@ -32,6 +32,7 @@ dart tic_tac_toe.dart
 - Players take turns entering their moves by choosing a number corresponding to an empty cell on the board.
 
 - The board is represented as follows:
+
     |   |
   1 | 2 | 3
     |   |
