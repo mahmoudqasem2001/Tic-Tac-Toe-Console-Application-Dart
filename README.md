@@ -21,10 +21,10 @@ Check out the demo of the Tic-Tac-Toe game [here](https://drive.google.com/file/
    git clone https://github.com/mahmoudqasem2001/Tic-Tac-Toe-Console-Application-Dart.git
 
 # Navigate to the project directory:
-cd tic-tac-toe-dart
+cd Tic-Tac-Toe-Console-Application-Dart
 
 # Run the Dart script:
-dart tic_tac_toe.dart
+dart game_solver.dart
 
 # Follow the on-screen instructions to play the game.
 
